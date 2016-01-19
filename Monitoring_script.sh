@@ -12,6 +12,8 @@ Hardware_details ()
 	clear
 	echo "\n Hardware_details are"
 	inxi
+	echo "Find out the number of cores:"
+	cat /proc/cpuinfo | grep -i
 }
 
 OS_details () 
@@ -175,7 +177,8 @@ menu ()
 	5) exit
 	  response
 	  ;;
-	*) echo "\n Wrong choice entered"
+	*) echo "\n Wrong choice entered: "
+	   echo "\nEnter choice from above"
    	response
    	;;
 	esac  
