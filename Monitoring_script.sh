@@ -1,5 +1,4 @@
 #/bin/bash
-clear
 chmod +x $0
 Hard_or_Soft_Link ()
 {
